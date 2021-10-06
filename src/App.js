@@ -1,13 +1,11 @@
-import { Button, Container, IconButton, TextField } from "@mui/material";
+import { Container } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
-import RemoveIcon from "@mui/icons-material/Remove";
-import AddIcon from "@mui/icons-material/Add";
-import { Table } from "react-bootstrap";
-import { Formik } from "formik";
-import * as Yup from "yup";
+
 import NewForm from "./NewForm";
+import ArrayWithState from "./HooksTest/ArrayWithState";
+import UseStateWithObject from "./HooksTest/UseStateWithObject";
+import ToDoList from "./HooksTest/ToDoList";
 const useStyles = makeStyles({
   root: {
     "& .MuiTextField-root": {
@@ -30,6 +28,9 @@ function App() {
     <div>
       <Container>
         <NewForm />
+        <ArrayWithState />
+        <UseStateWithObject />
+        <ToDoList />
       </Container>
     </div>
   );
